@@ -44,11 +44,13 @@ import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import ForestIcon from '@mui/icons-material/Forest';
 import SignatureCanva from "layouts/react-paint";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
 import GithubProfileFinder from "layouts/github-profile-finder";
+import OrgChart from "layouts/org-chart";
 
 const routes = [
   // {
@@ -59,14 +61,7 @@ const routes = [
   //   route: "/dashboard",
   //   component: <Dashboard />,
   // },
-  {
-    type: "collapse",
-    name: "Github Profile",
-    key: "github-profile-finder",
-    icon: <Icon fontSize="small">G</Icon>,
-    route: "/github-profile-finder",
-    component: <GithubProfileFinder />,
-  },  
+ 
   {
     type: "collapse",
     name: "Drawing",
@@ -75,6 +70,22 @@ const routes = [
     route: "/drawing",
     component: <SignatureCanva />,
   },
+  {
+    type: "collapse",
+    name: "Organization Tree",
+    key: "org-tree",
+    icon: <ForestIcon/>,
+    route: "/org-tree",
+    component: <OrgChart />,
+  },  
+  {
+    type: "collapse",
+    name: "Github Profile",
+    key: "github-profile-finder",
+    icon: <Icon fontSize="small">G</Icon>,
+    route: "/github-profile-finder",
+    component: <GithubProfileFinder />,
+  },  
   // {
   //   type: "collapse",
   //   name: "Tables",
