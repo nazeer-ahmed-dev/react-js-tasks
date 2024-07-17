@@ -48,6 +48,7 @@ import SignatureCanva from "layouts/react-paint";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
+import GithubProfileFinder from "layouts/github-profile-finder";
 
 const routes = [
   // {
@@ -58,6 +59,14 @@ const routes = [
   //   route: "/dashboard",
   //   component: <Dashboard />,
   // },
+  {
+    type: "collapse",
+    name: "Github Profile",
+    key: "github-profile-finder",
+    icon: <Icon fontSize="small">G</Icon>,
+    route: "/github-profile-finder",
+    component: <GithubProfileFinder />,
+  },  
   {
     type: "collapse",
     name: "Drawing",
